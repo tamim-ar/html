@@ -1,43 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap" rel="stylesheet">
+
     <title>Email Signature</title>
 
     <style>
-        .signature {
+        .email-signature {
             display: flex;
             align-items: center;
-            background: #f8f8f8;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 600px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             position: relative;
         }
 
-        .logo-2{
+        .profile-avatar {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+
+        .personal-info {
+            display: flex;
+            flex-direction: column;
+            margin-left: 40px;
+        }
+
+        .role-title {
+            margin-left: 50px;
+            font-size: 24px;
+            color: #666;
+            margin-bottom: -10px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #0073b1;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+
+        .social-links {
+            margin-left: 90px;
+        }
+
+        .company-logo {
+            width: 160px;
+            height: 80px;
+            margin-left: -30px;
             transform: rotate(-90deg);
+        }
+
+        .social-logo-small {
+            width: 30px;
+        }
+
+        .social-logo-medium {
+            width: 22px;
+        }
+
+        .social-logo-large {
+            width: 40px;
         }
     </style>
 </head>
+
 <body>
-    <div class="signature">
-        <div class="part1">
-            <img src="./image.jpg" alt="Profile Image">
+    <div class="email-signature">
+        <img class="profile-avatar" src="./image.jpg" alt="Profile Image">
+
+        <div class="personal-info">
+            <div class="role-title">REALTOR®</div>
+            <hr style="border: 1px solid rgb(156, 39, 39); margin: 20px 0;">
+            <div class="contact-info"><i class="fa-solid fa-phone"></i> <a href="tel:+18646218099"
+                    style="text-decoration: none;">(864) 621-8099</a>
+            </div>
+            <div class="contact-info"><i class="fa-solid fa-envelope-open"></i> <a
+                    href="mailto:gingerparksrealtor@gmail.com"
+                    style="text-decoration: none;">gingerparksrealtor@gmail.com</a></div>
+            <div class="contact-info"><i class="fa-brands fa-instagram"></i> <a
+                    href="https://www.instagram.com/gingerparks_realtor/"
+                    style="text-decoration: none;">@gingerparks_realtor</a>
+            </div>
+            <div class="contact-info"><i class="fa-solid fa-globe"></i> <a href="https://onereal.com/ginger-parks"
+                    style="text-decoration: none;">onereal.com/ginger-parks</a></div>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/GingerParksRealEstate/"><img src="./meta.png" alt="Facebook Logo"
+                        class="social-logo-small"></a>
+                <a href="https://www.linkedin.com/in/gingerparks"><img src="./LinkedIn.png" alt="LinkedIn Logo"
+                        class="social-logo-medium"></a>
+                <a href="https://www.zillow.com/profile/gingerparksrealtor"><img src="./review.png" alt="Zillow Logo"
+                        class="social-logo-large"></a>
+            </div>
         </div>
-        <div class="part2">
-            <div class="name">Ginger Parks</div>
-            <div class="title">REALTOR®</div>
-            <div class="contact">📞 (864) 621-8099</div>
-            <div class="contact">📧 gingerparksrealtor@gmail.com</div>
-            <div class="contact">📸 @gingerparks_realtor</div>
-            <div class="contact">🌍 onereal.com/ginger-parks</div>
-        </div>
-        <div class="part3">
-            <img class= "logo-2" src="./logo2.jpg" alt="Logo">
-        </div>
+
+        <img class="company-logo" src="./logo2.png" alt="Company Logo">
     </div>
 </body>
+
 </html>
