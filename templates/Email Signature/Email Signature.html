@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap" rel="stylesheet">
 
     <title>Email Signature</title>
 
     <style>
         .email-signature {
-            display: flex;
+            display: inline-flex;
             align-items: center;
             position: relative;
+            background-color: whitesmoke;
         }
 
         .profile-avatar {
@@ -30,13 +31,14 @@
         .personal-info {
             display: flex;
             flex-direction: column;
-            margin-left: 40px;
+            margin-left: 80px;
         }
 
         .role-title {
             margin-left: 50px;
             font-size: 24px;
             color: #666;
+            margin-top: 20px;
             margin-bottom: -10px;
         }
 
@@ -75,6 +77,12 @@
         .social-logo-large {
             width: 40px;
         }
+
+        .signature-style{
+            width: 200px;
+            margin-left: -510px;
+            transform: rotate(-10deg);
+        }
     </style>
 </head>
 
@@ -84,7 +92,7 @@
 
         <div class="personal-info">
             <div class="role-title">REALTOR®</div>
-            <hr style="border: 1px solid rgb(156, 39, 39); margin: 20px 0;">
+            <hr style="border: 1px solid white; margin: 20px 0;">
             <div class="contact-info"><i class="fa-solid fa-phone"></i> <a href="tel:+18646218099"
                     style="text-decoration: none;">(864) 621-8099</a>
             </div>
@@ -109,6 +117,8 @@
         </div>
 
         <img class="company-logo" src="./logo2.png" alt="Company Logo">
+
+        <img src="./signature.png" alt="" class="signature-style">
     </div>
 </body>
 
