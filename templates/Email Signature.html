@@ -11,49 +11,74 @@
         .signature {
             display: flex;
             align-items: center;
-            padding: 10px;
-            border-top: 2px solid #0073b1;
-            max-width: 400px;
+            background: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
         .avatar {
-            width: 60px;
-            height: 60px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
-            margin-right: 10px;
+            margin-right: 20px;
+            border: 3px solid #fff;
         }
         .info {
             display: flex;
             flex-direction: column;
         }
         .name {
-            font-size: 16px;
+            font-size: 20px;
             font-weight: bold;
             color: #333;
+            font-family: 'Brush Script MT', cursive;
         }
         .title {
             font-size: 14px;
             color: #666;
+            margin-bottom: 10px;
+        }
+        .contact {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
         }
         .links a {
             text-decoration: none;
             color: #0073b1;
             margin-right: 10px;
-            font-size: 12px;
+            font-size: 14px;
+        }
+        .brand-text {
+            position: absolute;
+            right: 10px;
+            bottom: -10px;
+            font-size: 40px;
+            color: #ddd;
+            font-weight: bold;
+            transform: rotate(-90deg);
         }
     </style>
 </head>
 <body>
     <div class="signature">
-        <img src="https://via.placeholder.com/60" alt="Your Photo" class="avatar">
+        <img src="https://via.placeholder.com/100" alt="Your Photo" class="avatar">
         <div class="info">
-            <div class="name">Tamim Ahasan Rijon</div>
-            <div class="title">React Developer | AI/ML Specialist</div>
+            <div class="name">Ginger Parks</div>
+            <div class="title">REALTOR®</div>
+            <div class="contact">📞 (864) 621-8099</div>
+            <div class="contact">📧 gingerparksrealtor@gmail.com</div>
+            <div class="contact">📸 @gingerparks_realtor</div>
+            <div class="contact">🌍 onereal.com/ginger-parks</div>
             <div class="links">
-                <a href="mailto:your.email@example.com">Email</a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-                <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Meta</a>
+                <a href="#">Zillow</a>
             </div>
         </div>
+        <div class="brand-text">real</div>
     </div>
 </body>
 </html>
